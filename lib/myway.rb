@@ -35,7 +35,7 @@ module Myway
     def start_server
       puts 'Starting Myway server...'
       display_break
-      system('puma')
+      return if system('rake run_myway')
       display_break
       puts 'Myway server stopped'
     end
@@ -43,7 +43,7 @@ module Myway
     def run_tests
       puts 'Running Rspec tests...'
       display_break
-      system('rspec')
+      success = system('rake test_myway')
       display_break
       puts 'Testing completed'
     end
