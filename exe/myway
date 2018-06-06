@@ -1,0 +1,43 @@
+#!/usr/bin/env ruby
+
+# frozen_string_literal: true
+
+require 'myway'
+
+if %w[generate g].include?(ARGV[0])
+  generator = Myway::Generate.new
+  case ARGV[1]
+  when 'init', 'project'
+    if ARGV[2]
+      generator.project(ARGV[2])
+    else
+      puts 'Missing parameter: please provide a project name'
+    end
+  when 'controller'
+    if ARGV[2]
+      generator.controller(ARGV[2])
+    else
+      puts 'Missing parameter: please provide a controller name'
+    end
+  when 'api'
+    if ARGV[2]
+      generator.api(ARGV[2])
+    else
+      puts 'Missing parameter: please provide an api name'
+    end
+  else
+    puts 'Unknown MyWay command: please specify something to generate'
+  end
+elsif %w[run r].include?(ARGV[0])
+  runner = Myway::Run.new
+  case ARGV[1]
+  when 'server', 's'
+    runner.start_server
+  when 'tests', 'test', 't'
+    runner.run_tests
+  else
+    puts 'Unknown MyWay command: please specify something to run'
+  end
+else
+  puts 'Unknown MyWay command'
+end
