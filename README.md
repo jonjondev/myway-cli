@@ -1,6 +1,6 @@
 # MyWay-CLI: The must-have tool for MyWay
 
-The MyWay CLI allows users to create, modify, run and test projects using the MyWay Sinatra framework (see here: https://github.com/J-Mo63/myway-sinatra) using the simple `myway` command.
+The MyWay CLI allows users to create, modify, run and test projects using the [MyWay Sinatra Framework](https://github.com/J-Mo63/myway-sinatra) using the simple `myway` command.
 
 ## Installation
 
@@ -15,7 +15,7 @@ $ gem install myway-cli
 To create a new project:
 
 ```bash
-$ myway generate project project-name
+$ myway generate project example-project
 ```
 
 To run the server:
