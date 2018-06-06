@@ -37,7 +37,7 @@ module Myway
       display_break
       return if system('rake run_myway')
       display_break
-      puts 'Myway server stopped'
+      puts 'Server failed to start'
     end
 
     def run_tests
@@ -45,7 +45,7 @@ module Myway
       display_break
       success = system('rake test_myway')
       display_break
-      puts 'Testing completed'
+      puts success ? 'Testing completed' : 'Testing failed'
     end
 
     private
