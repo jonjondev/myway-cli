@@ -1,38 +1,50 @@
-# Myway
+# MyWay-CLI: The must-have tool for MyWay
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/myway`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+The MyWay CLI allows users to create, modify, run and test projects using the MyWay Sinatra framework (see here: https://github.com/J-Mo63/myway-sinatra) using the simple `myway` command.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Simply run the following in console to install:
 
-```ruby
-gem 'myway'
+```bash
+$ gem install myway-cli
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install myway
 
 ## Usage
 
-TODO: Write usage instructions here
+To create a new project:
 
-## Development
+```bash
+$ myway generate project project-name
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+To run the server:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```bash
+$ myway run server
+```
+
+To run test:
+
+```bash
+$ myway run tests
+```
+
+To introduce a new controller, api or model:
+
+```bash
+$ myway generate controller example_controller
+$ myway generate api example_api
+$ myway generate model example_model
+```
+
+*Note: command segments can be run with just the first letter of their name (e.g. running the server can be accomplished with  `myway r s`)*
 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/myway.
+
+Feel free to fork it and help out on this project!
 
 ## License
 
