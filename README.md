@@ -38,11 +38,13 @@ $ myway generate api example_api
 $ myway generate model example_model
 ```
 
-*Note: command segments can be run with just the first letter of their name (e.g. running the server can be accomplished with  `myway r s`)*
+*Note: command segments can be run with just the first letter of their name*
+
+*e.g. running the server can be accomplished with  `myway r s`*
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/myway.
+Bug reports and pull requests are welcome on GitHub at https://github.com/J-Mo63/myway-cli.
 
 Feel free to fork it and help out on this project!
 
