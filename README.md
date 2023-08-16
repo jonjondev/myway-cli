@@ -1,6 +1,6 @@
 # MyWay-CLI: The must-have tool for MyWay
 
-The MyWay CLI allows users to create, modify, run and test projects using the [MyWay Sinatra Framework](https://github.com/J-Mo63/myway-sinatra) using the simple `myway` command.
+The MyWay CLI allows users to create, modify, run and test projects using the [MyWay Sinatra Framework](https://github.com/jonjondev/myway-sinatra) using the simple `myway` command.
 
 ## Installation
 
@@ -44,7 +44,7 @@ $ myway generate model example_model
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/J-Mo63/myway-cli.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jonjondev/myway-cli.
 
 Feel free to fork it and help out on this project!
 

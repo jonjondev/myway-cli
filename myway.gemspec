@@ -13,9 +13,9 @@ Gem::Specification.new do |spec|
   spec.summary       = 'A command line tool for the MyWay Sinatra framework'
   spec.description   = 'The MyWay CLI allows users to create, modify, run'\
                        ' and test projects using the MyWay Sinatra framework'\
-                       ' (see here: https://github.com/J-Mo63/myway-sinatra)'\
+                       ' (see here: https://github.com/jonjondev/myway-sinatra)'\
                        ' using the simple `myway` command.'
-  spec.homepage      = 'https://github.com/J-Mo63/myway-cli'
+  spec.homepage      = 'https://github.com/jonjondev/myway-cli'
   spec.license       = 'MIT'
 
   # Specify which files should be added to the gem when it is released.

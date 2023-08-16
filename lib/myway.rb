@@ -8,7 +8,7 @@ module Myway
   class Generate
     def project(name)
       puts 'Cloning template file into project...'
-      location = 'git://github.com/J-Mo63/myway-sinatra'
+      location = 'git://github.com/jonjondev/myway-sinatra'
       system("git clone --depth=1 #{location} #{name}")
       success_message
     end
